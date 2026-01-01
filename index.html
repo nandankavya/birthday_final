@@ -31,6 +31,11 @@ body{
 }
 .screen.active{display:flex}
 
+/* ONLY FIX FOR COUNTER SCREEN */
+.counter-screen{
+  justify-content:center;
+}
+
 /* Bubble */
 .bubble{
   background:linear-gradient(135deg,#ff9ecf,#ffc3e0,#ffd6ec);
@@ -187,8 +192,8 @@ button{
   <button onclick="next()">Next</button>
 </div>
 
-<!-- COUNTER SCREEN -->
-<div class="screen">
+<!-- COUNTER SCREEN (CENTER FIXED ONLY) -->
+<div class="screen counter-screen">
   <div class="bubble">
     <b id="counter" style="font-size:20px;"></b>
     <img src="us2.jpg" class="photo">
