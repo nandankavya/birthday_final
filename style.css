@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: radial-gradient(#ff5fa2, #2b003d);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.active {
+  display: block;
+  animation: fade 1s ease;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background: hotpink;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.glow {
+  text-shadow: 0 0 20px pink;
+}
+
+.letter {
+  background: #ffd6ec;
+  color: #4b0033;
+  padding: 25px;
+  border-radius: 20px;
+  line-height: 1.6;
+}
+
+.photos img {
+  width: 100px;
+  height: 140px;
+  border-radius: 15px;
+  margin: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 12px pink;
+}
+
+.soft {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Candle */
+.candle {
+  width: 40px;
+  height: 120px;
+  background: white;
+  margin: 40px auto;
+  border-radius: 10px;
+  position: relative;
+}
+
+.flame {
+  width: 20px;
+  height: 30px;
+  background: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.3s infinite;
+}
+
+.smoke {
+  width: 20px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(200,200,200,0.7);
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+/* Balloons */
+.balloons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.balloon {
+  width: 70px;
+  height: 90px;
+  background: linear-gradient(#ff9ad5, #ff4da6);
+  border-radius: 50%;
+}
+
+#word {
+  margin-top: 30px;
+  font-size: 28px;
+  text-shadow: 0 0 15px pink;
+}
+
+.name {
+  font-size: 42px;
+  text-shadow: 0 0 25px pink;
+}
+
+@keyframes flicker {
+  50% { transform: translateX(-50%) scale(0.9); }
+}
+
+@keyframes fade {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
