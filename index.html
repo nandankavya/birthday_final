@@ -26,6 +26,9 @@ body{
   flex-direction:column;
   justify-content:center;
   align-items:center;
+
+  overflow-y:auto;
+  -webkit-overflow-scrolling: touch;
 }
 .screen.active{display:flex}
 
@@ -171,17 +174,12 @@ button{
       You made me a sincere man without even trying 🤍🌱
       Just by loving you, I learned how to be calmer, kinder, and more real 🫶✨
       You changed me in ways I didn’t even know I needed 💫
-      I love everything about you — your eyes that feel like home 👀🏡,
-      your face that brings me peace 😌💖,
-      your hair that I could admire forever 💆‍♀️🌸,
-      your smile 😊✨,
-      even the way you breathe when you’re calm 🌬️🤍
+      I love everything about you — your eyes that feel like home 👀🏡, your face that brings me peace 😌💖,
+      your hair that I could admire forever 💆‍♀️🌸, your smile 😊✨, even the way you breathe when you’re calm 🌬️🤍
       Every little detail of you matters to me more than you’ll ever understand 🥹💞
-      And I see the effort you make for us — the patience 🕊️,
-      the care 💗,
+      And I see the effort you make for us — the patience 🕊️, the care 💗,
       the things you do quietly without asking for anything in return 🌙💫
-      For you, I’d give anything 🫂💝
-      I want you to always choose yourself over me 🌸👑,
+      For you, I’d give anything 🫂💝 I want you to always choose yourself over me 🌸👑,
       because your happiness is my biggest priority 💕
       You are truly the best gift God has ever given me 🎁🙏💖✨
     </p>
@@ -190,14 +188,14 @@ button{
   <button onclick="next()">Next</button>
 </div>
 
-<!-- COUNTER SCREEN (ORDER FIXED ONLY) -->
+<!-- COUNTER SCREEN -->
 <div class="screen">
   <div class="bubble">
-    <p style="margin-bottom:10px;">
+    <b id="counter" style="font-size:20px;"></b>
+    <img src="us2.jpg" class="photo">
+    <p style="margin-top:15px;">
       From the day you became my world ⏳💖
     </p>
-    <b id="counter" style="font-size:20px;display:block;margin-bottom:15px;"></b>
-    <img src="us2.jpg" class="photo">
   </div>
   <button onclick="next()">Next</button>
 </div>
@@ -233,8 +231,6 @@ button{
       I will never forget you 🕰️💞
       Thank you for giving me the best moments of my life 🌟🥰
       Happy Birthday my love 🎂🎉❤️
-      See you soon 🥹💖
-      I miss you so much already 😭
     </p>
   </div>
   <button onclick="location.reload()">Replay 🔁</button>
