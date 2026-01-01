@@ -14,7 +14,7 @@
 body{
   margin:0;
   background:radial-gradient(circle at top,#ffb6c1,#ffc0cb,#ffe4e1);
-  overflow:hidden;
+  overflow:auto;
   text-align:center;
 }
 
@@ -23,6 +23,7 @@ body{
   display:none;
   min-height:100vh;
   padding:30px 20px;
+  padding-bottom:100px;
   flex-direction:column;
   justify-content:flex-start;
   align-items:center;
@@ -126,7 +127,7 @@ button{
 /* Candle */
 .candle{font-size:90px;cursor:pointer}
 
-/* ===== COUNTER (ONLY CHANGE) ===== */
+/* ===== COUNTER ===== */
 .counter-screen{
   flex-direction:column;
   justify-content:space-between;
@@ -153,8 +154,6 @@ button{
   display:flex;
   justify-content:center;
 }
-/* ===== END COUNTER ===== */
-
 </style>
 </head>
 
@@ -222,24 +221,15 @@ button{
   <button onclick="next()">Next</button>
 </div>
 
-<!-- COUNTER SCREEN -->
+<!-- COUNTER -->
 <div class="screen counter-screen">
   <div class="counter-content">
-
-    <div class="from-day">
-      From the day you became my world ⏳💖
-    </div>
-
-    <div class="counter-time">
-      <span id="counter"></span>
-    </div>
-
+    <div class="from-day">From the day you became my world ⏳💖</div>
+    <div class="counter-time"><span id="counter"></span></div>
     <div class="counter-media">
       <img src="us2.jpg" class="photo">
     </div>
-
   </div>
-
   <button onclick="next()">Next</button>
 </div>
 
