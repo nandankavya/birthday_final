@@ -126,11 +126,38 @@ button{
 /* Candle */
 .candle{font-size:90px;cursor:pointer}
 
-/* ✅ COUNTER FIX — ONLY THIS */
-.counter-screen .bubble{
+/* ===== COUNTER (ONLY CHANGE) ===== */
+.counter-screen{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.counter-content{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
   margin-top:auto;
   margin-bottom:auto;
 }
+
+.from-day{
+  margin-bottom:12px;
+}
+
+.counter-time{
+  margin-bottom:16px;
+}
+
+.counter-media{
+  width:100%;
+  display:flex;
+  justify-content:center;
+}
+/* ===== END COUNTER ===== */
+
 </style>
 </head>
 
@@ -198,15 +225,24 @@ button{
   <button onclick="next()">Next</button>
 </div>
 
-<!-- COUNTER SCREEN -->
+<!-- COUNTER SCREEN (UPDATED ONLY HERE) -->
 <div class="screen counter-screen">
-  <div class="bubble">
-    <b id="counter" style="font-size:20px;"></b>
-    <img src="us2.jpg" class="photo">
-    <p style="margin-top:15px;">
+  <div class="counter-content">
+
+    <div class="from-day">
       From the day you became my world ⏳💖
-    </p>
+    </div>
+
+    <div class="counter-time">
+      <span id="counter"></span>
+    </div>
+
+    <div class="counter-media">
+      <img src="us2.jpg" class="photo">
+    </div>
+
   </div>
+
   <button onclick="next()">Next</button>
 </div>
 
